@@ -1,0 +1,40 @@
+.conbox{
+    display: flex;
+    flex-direction: row;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.card {
+    width: 30vw;
+    border: grey solid 1px;
+    border-radius: 5px;
+    background-color: lightgray;
+    padding: 0.5em 1em;
+    margin: 0.25em 0;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: lightcoral;
+}
+
+.card2 {
+    width: 3vw;
+    border: grey solid 1px;
+    border-radius: 5px;
+    background-color: lightgray;
+    padding: 0.5em 1em;
+    margin: 0.25em 0;
+    cursor: pointer;
+}

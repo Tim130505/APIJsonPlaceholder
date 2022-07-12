@@ -1,0 +1,7 @@
+<button (click)="backToOverview()">Zurück</button>
+
+<div class="detail" *ngIf="(user$ | async) as user">
+    <span><b>Name:</b>{{user.name}}</span>
+    <span><b>E-Mail:</b>{{user.email}}</span>
+    <span><b>Mobil:</b>{{user.phone}}</span>
+</div>

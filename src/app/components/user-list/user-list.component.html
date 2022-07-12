@@ -1,0 +1,10 @@
+<h3>Userlist</h3>
+
+<div class="conbox"*ngFor="let user of userList$ | async">
+    <div class="card" (click)="jumtToDetailView(user.id)">
+        {{ user.name }}
+    </div>
+    
+    <div class="card2" (click)="showToDos(user.id)">To-Do's</div>
+    <div class="card2" (click)="showAlbum(user.id)">Photos</div>
+</div>

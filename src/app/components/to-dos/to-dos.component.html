@@ -1,0 +1,15 @@
+<button (click)="todosBackButton()">Zurück</button>
+
+<div class="detail" *ngIf="(todos$ | async) as todos">
+    <div *ngFor="let todo of todos " [ngClass]="todo.completed === true ? 'green' : 'red'">
+        <div class="card" >
+
+            <ul>
+                <li><span><b>ID:</b>{{ todo.id }}</span></li>
+                <li><span><b>Title:</b>{{ todo.title }}</span></li>
+                <li><span><b>Completed:</b>{{ todo.completed }} </span></li>
+            </ul>
+            </div>
+
+</div>
+</div>

@@ -1,0 +1,5 @@
+<div class="detail" *ngIf="(album$ | async) as albums">
+    <div class="card" (click)="showPhotos(album.id)" *ngFor="let album of albums ">
+        <span> <b>Title:</b> {{album.title}} </span>
+    </div>
+</div>

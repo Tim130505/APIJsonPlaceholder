@@ -1,0 +1,47 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.card {
+    width: 30vw;
+    border: grey solid 1px;
+    border-radius: 5px;
+    background-color: lightgray;
+    padding: 0.5em 1em;
+    margin: 0.25em 0;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: lightcoral;
+}
+
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+b {
+    min-width: 80px;
+    display: inline-block;
+}
+
+button {
+    border: none;
+    background: grey;
+    border-radius: 3px;
+    color: white;
+    padding: .4em;
+    font-size: 1.2em;
+    width: 10em;
+}

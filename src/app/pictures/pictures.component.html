@@ -1,0 +1,5 @@
+<div class="gallery"  *ngIf="(photos$ | async) as photos">
+    <div *ngFor="let photo of photos ">
+        <a (click)="getBack()" class="image-link" href="{{photo.url}}" ><img src="{{photo.thumbnailUrl}}"></a>
+    </div>
+</div>
